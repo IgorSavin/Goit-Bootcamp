@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 60px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+
+.header{
+
+    display: inline-block;
+    padding: 20px;
+}
+.main{
+    width: 960px;
+    margin: auto;
+}
+
+.box span{
+    display: block;
+    text-transform: uppercase;
+}
+
+.box h2{
+
+    padding:20px 0;
+    font-size:18px;
+}
+
+.box{
+    width: 420px;
+    display: inline-block;
+    margin: 0 10px;
+    font-family: 'Playfair Display', serif;
+    font-size:12px;
+padding: 0 0 50px;
+}
+
