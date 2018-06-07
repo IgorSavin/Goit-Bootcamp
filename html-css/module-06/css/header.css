@@ -1,0 +1,39 @@
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.header{
+    padding-top:28px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 127px;
+}
+
+.logo{
+    color: #95e1d3;
+    font-size: 30px;
+    font-weight: 700;
+}
+.menu{
+    display: flex;
+    width: 490px;
+    justify-content: space-between;
+
+}
+.item{
+    display: inline-block;
+    color: #95e1d3;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.item:hover{
+    color: #f38181;
+    border-bottom:2px solid #f38181;
+    padding-bottom: 12px;
+    transform: translateY(-10px);
+}
