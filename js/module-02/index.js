@@ -19,31 +19,24 @@
  в массив чисел не нужно, после чего снова пользователю предлагается ввести число в prompt.
  */
 
-let userInput;
-const numbers = [];
-let total = 0;
-
-
-
-do{
-    userInput = prompt('Please insert any number?');
-    if(!isNaN(userInput)&& userInput !== null && userInput !== '' && userInput !== ' '){
-        numbers.push(+userInput);}
-}
-while(!isNaN(userInput) && userInput!== null);
-for (let elm of numbers){
-    if(numbers.length!==0){
-        total+=elm;
-    }
-}
-alert(`The total summary is ${total}`);
-
-
-
-
-
-
-
+// let userInput;
+// const numbers = [];
+// let total = 0;
+//
+//
+//
+// do{
+//     userInput = prompt('Please insert any number?');
+//     if(!isNaN(userInput)&& userInput !== null && userInput !== '' && userInput !== ' '){
+//         numbers.push(+userInput);}
+// }
+// while(!isNaN(userInput) && userInput!== null);
+// for (let elm of numbers){
+//     if(numbers.length!==0){
+//         total+=elm;
+//     }
+// }
+// alert(`The total summary is ${total}`);
 
 
 /*
@@ -73,24 +66,24 @@ alert(`The total summary is ${total}`);
  Если пользователь нажмет Cancel, прекратить выполнение цикла.
  */
 
-// const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
-// let attempts = 3;
-// let passwordInput;
-//
-//
-// do {
-//     passwordInput = prompt(`Please enter you password, you have ${attempts} attempts left`);
-//     if (passwords.includes(passwordInput)) {
-//         alert('Welcome to your account!');
-//         break;
-//     } else if (passwordInput === null) {
-//         break;
-//     }
-//     else if (!passwords.includes(passwordInput)) {
-//         attempts--;
-//         alert(`Please enter you password, you have ${attempts} attempts left`);
-//         if (attempts === 0) {
-//             alert('You have reached your attemps limit. Your account blocked now.');
-//         }
-//     }
-// } while (attempts >=1);
+const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
+let attempts = 3;
+let passwordInput;
+
+
+do {
+    passwordInput = prompt(`Please enter you password, you have ${attempts} attempts left`);
+    if (passwords.includes(passwordInput)) {
+        alert('Welcome to your account!');
+        break;
+    } else if (passwordInput === null) {
+        break;
+    }
+    else if (!passwords.includes(passwordInput)) {
+        attempts--;
+        alert(`This password is incorrect`);
+        if (attempts === 0) {
+            alert('You have reached your attemps limit. Your account blocked now.');
+        }
+    }
+} while (attempts >= 1);
